@@ -1,0 +1,54 @@
+{
+    // ===== SQLTools (DuckDB) =====
+    "sqltools.connections": [
+        {
+            "name": "DuckDB (project)",
+            "driver": "DuckDB",
+            "database": "${workspaceFolder}/data/database.duckdb",
+            "createDatabase": true
+        }
+    ],
+    "sqltools.highlightQuery": true,
+    "sqltools.useNodeRuntime": true,
+    "sqltools.format": {
+        "capitalizeKeywords": true,
+        "keywordCase": "upper",
+        "linesBetweenQueries": 2,
+        "placeSelectColumnsOnNewLine": true
+    },
+
+    // ===== DuckDB =====
+    // Default extension for .duckdb files
+    "files.associations": {
+        "*.duckdb": "sql"
+    },
+
+    // ===== Editor =====
+    "[sql]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true,
+        "editor.formatOnSave": true,
+        "editor.rulers": [100],
+        "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+    },
+
+    "files.autoSave": "onFocusChange",
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "boundary",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": true,
+
+    // DuckDB creates temporary files
+    "files.exclude": {
+        "**/*.tmp": true,
+        "**/data/*.duckdb": true,
+        "**/data/*.duckdb.wal": true
+    },
+
+    // ===== Terminal =====
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.fontSize": 13,
+
+    // ===== Explorer =====
+    "explorer.compactFolders": false
+}
