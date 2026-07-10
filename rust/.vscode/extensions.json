@@ -1,0 +1,30 @@
+{
+    "recommendations": [
+        // Rust language server — the essential extension for Rust
+        "rust-lang.rust-analyzer",
+
+        // Native debugger support via LLDB
+        "vadimcn.vscode-lldb",
+
+        // TOML syntax highlighting and validation for Cargo.toml
+        "tamasfe.even-better-toml",
+
+        // Manage crate dependencies — inline version hints
+        "serayuzgur.crates",
+
+        // Display test results inline in the editor
+        "hbenl.vscode-test-explorer",
+
+        // EditorConfig support
+        "editorconfig.editorconfig",
+
+        // Rainbow bracket pairs for nested generics
+        "2gua.rainbow-brackets",
+
+        // Dependi — dependency vulnerability scanning
+        "fill-labs.dependi"
+    ],
+    "unwantedRecommendations": [
+        "rust-lang.rust"  // The old Rust extension (pre-rust-analyzer)
+    ]
+}
