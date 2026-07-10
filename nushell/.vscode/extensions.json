@@ -1,0 +1,6 @@
+{
+    "recommendations": [
+        // Official Nushell language support — syntax highlighting, LSP, and debugger
+        "the-nushell.nushell-vscode"
+    ]
+}
