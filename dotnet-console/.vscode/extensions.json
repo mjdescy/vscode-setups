@@ -1,0 +1,28 @@
+{
+    "recommendations": [
+        // C# language support, debugging, and project management
+        "ms-dotnettools.csharp",
+
+        // .NET SDK manager — installs/upgrades the SDK from within VS Code
+        "ms-dotnettools.vscode-dotnet-runtime",
+
+        // Test runner UI for .NET
+        "formulahendry.dotnet-test-explorer",
+
+        // XML documentation comment generator (type ///)
+        "k--kato.docomment",
+
+        // MSBuild project file syntax highlighting
+        "tintoy.msbuild-project-tools",
+
+        // EditorConfig support
+        "editorconfig.editorconfig",
+
+        // Rainbow-colored indent guides
+        "oderwat.indent-rainbow"
+    ],
+    "unwantedRecommendations": [
+        // Web-specific extensions we don't need for console apps
+        "ms-vscode.live-server"
+    ]
+}

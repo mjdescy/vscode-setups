@@ -1,0 +1,18 @@
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Node (if any)
+node_modules/
+
+# IDE
+.vs/
+*.sln.docstates
+
+# Build artifacts
+bin/
+obj/
+target/
