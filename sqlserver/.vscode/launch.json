@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            // Run a SQL query file against the connected server
+            "name": "Execute SQL Query",
+            "type": "mssql",
+            "request": "launch",
+            "queryFile": "${file}"
+        }
+    ]
+}

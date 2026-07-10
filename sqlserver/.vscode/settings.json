@@ -1,0 +1,55 @@
+{
+    // ===== SQL Server (mssql) =====
+    "mssql.connections": [
+        {
+            "server": "localhost",
+            "database": "",
+            "authenticationType": "SqlLogin",
+            "user": "sa",
+            "password": "",
+            "savePassword": false,
+            "encrypt": true,
+            "trustServerCertificate": true
+        }
+    ],
+    "mssql.intelliSense.enableIntelliSense": true,
+    "mssql.intelliSense.enableErrorChecking": true,
+    "mssql.intelliSense.enableSuggestions": true,
+    "mssql.format.alignColumnDefinitionsInColumns": true,
+    "mssql.format.datatypeCasing": "lowercase",
+    "mssql.format.keywordCasing": "uppercase",
+    "mssql.format.placeSelectListReferencesOnNewLine": true,
+    "mssql.results.streaming": true,
+    "mssql.saveAsCsv.includeHeaders": true,
+
+    // ===== SQLTools =====
+    "sqltools.format": {
+        "capitalizeKeywords": true,
+        "keywordCase": "upper",
+        "linesBetweenQueries": 2,
+        "placeSelectColumnsOnNewLine": true
+    },
+    "sqltools.highlightQuery": true,
+    "sqltools.useNodeRuntime": true,
+
+    // ===== Editor =====
+    "[sql]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "ms-mssql.mssql"
+    },
+
+    "files.autoSave": "onFocusChange",
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "boundary",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": true,
+
+    // ===== Terminal =====
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.fontSize": 13,
+
+    // ===== Explorer =====
+    "explorer.compactFolders": false
+}
