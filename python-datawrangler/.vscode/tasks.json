@@ -1,0 +1,43 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Python: create venv",
+            "type": "shell",
+            "command": "python3 -m venv .venv && ${workspaceFolder}/.venv/bin/pip install --upgrade pip",
+            "group": "none",
+            "problemMatcher": []
+        },
+        {
+            "label": "Python: install dev deps",
+            "type": "shell",
+            "command": "${workspaceFolder}/.venv/bin/pip install pandas jupyter black ruff pytest",
+            "group": "none",
+            "problemMatcher": []
+        },
+        {
+            "label": "Python: run tests",
+            "type": "shell",
+            "command": "${workspaceFolder}/.venv/bin/python -m pytest",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Python: lint (ruff)",
+            "type": "shell",
+            "command": "${workspaceFolder}/.venv/bin/ruff check .",
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "Python: format (ruff)",
+            "type": "shell",
+            "command": "${workspaceFolder}/.venv/bin/ruff format .",
+            "group": "build",
+            "problemMatcher": []
+        }
+    ]
+}

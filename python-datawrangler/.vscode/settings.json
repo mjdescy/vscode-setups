@@ -1,0 +1,66 @@
+{
+    // ===== Python =====
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+    "python.terminal.activateEnvironment": true,
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "python.envFile": "${workspaceFolder}/.env",
+    "python.languageServer": "Pylance",
+
+    // Type checking — use "strict" for data pipelines
+    "python.analysis.typeCheckingMode": "standard",
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.analysis.inlayHints.variableTypes": true,
+    "python.analysis.inlayHints.pytestParameters": true,
+    "python.analysis.diagnosticMode": "workspace",
+    "python.analysis.importFormat": "absolute",
+
+    // ===== Formatting =====
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit",
+            "source.fixAll": "explicit"
+        },
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true
+    },
+    "ruff.format.args": ["--line-length", "100"],
+    "ruff.lint.args": ["--line-length", "100"],
+    "ruff.lint.run": "onType",
+    "ruff.organizeImports": true,
+
+    "isort.args": ["--profile", "black", "--line-length", "100"],
+
+    // ===== Jupyter & DataWrangler =====
+    "jupyter.askForKernelRestart": false,
+    "jupyter.alwaysTrustNotebooks": true,
+    "jupyter.sendSelectionToInteractiveWindow": true,
+    "datawrangler.showWelcomeOnInstall": false,
+
+    "notebook.lineNumbers": "on",
+    "notebook.cellFocusIndicator": "border",
+
+    // ===== Files =====
+    "files.autoSave": "onFocusChange",
+    "files.exclude": {
+        "**/__pycache__/**": true,
+        "**/.pytest_cache/**": true,
+        "**/.venv/**": true,
+        "**/*.pyc": true,
+        "**/.mypy_cache/**": true
+    },
+
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "boundary",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": true,
+
+    // ===== Terminal =====
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.fontSize": 13,
+
+    // ===== Explorer =====
+    "explorer.compactFolders": false
+}
