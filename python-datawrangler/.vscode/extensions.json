@@ -53,6 +53,6 @@
         "yzhang.markdown-all-in-one",
 
         // Open files/folders in external applications from VS Code
-        "xdxd.vscode-open-external-app"
+        "yutengjing.open-in-external-app"
     ]
 }
