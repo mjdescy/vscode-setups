@@ -2,16 +2,7 @@
     // ===== .NET / C# =====
     "dotnet.enablePackageRestore": true,
 
-    // Use file-scoped namespaces by default (C# 10+)
-    "omnisharp.enableFileScopedNamespace": true,
-
-    // Enable Roslyn analyzers
-    "omnisharp.enableRoslynAnalyzers": true,
-
-    // Enable .NET code analysis
-    "omnisharp.enableAnalyzersForAllProjects": true,
-
-    // Format on save using dotnet-format
+    // Format on save using the C# extension (also used by C# Dev Kit)
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
     "[csharp]": {
@@ -20,12 +11,8 @@
         "editor.insertSpaces": true
     },
 
-    // Use .editorconfig for style rules
-    "omnisharp.useEditorConfigFile": true,
-
-    // ===== Testing =====
-    "dotnet-test-explorer.testProjectPath": "tests/**/*.Tests.csproj",
-    "dotnetTestExplorer.enableTelemetry": false,
+    // Use .editorconfig for style rules (handled by EditorConfig extension)
+    "editorconfig.editorconfig": true,
 
     // ===== General Editor =====
     "files.exclude": {

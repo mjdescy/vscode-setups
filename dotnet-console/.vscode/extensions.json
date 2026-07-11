@@ -1,13 +1,13 @@
 {
     "recommendations": [
-        // C# language support, debugging, and project management
+        // C# language support, debugging, and project management (required by C# Dev Kit)
         "ms-dotnettools.csharp",
+
+        // C# Dev Kit — solution explorer, built-in test explorer, Roslyn-powered IDE features
+        "ms-dotnettools.csdevkit",
 
         // .NET SDK manager — installs/upgrades the SDK from within VS Code
         "ms-dotnettools.vscode-dotnet-runtime",
-
-        // Test runner UI for .NET
-        "formulahendry.dotnet-test-explorer",
 
         // XML documentation comment generator (type ///)
         "k--kato.docomment",
