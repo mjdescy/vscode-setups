@@ -1,35 +1,22 @@
 {
-    // ===== SQLTools (DuckDB) =====
-    "sqltools.connections": [
-        {
-            "name": "DuckDB (project)",
-            "driver": "DuckDB",
-            "database": "${workspaceFolder}/data/database.duckdb",
-            "createDatabase": true
-        }
-    ],
-    "sqltools.highlightQuery": true,
-    "sqltools.useNodeRuntime": true,
-    "sqltools.format": {
-        "capitalizeKeywords": true,
-        "keywordCase": "upper",
-        "linesBetweenQueries": 2,
-        "placeSelectColumnsOnNewLine": true
-    },
+    // ===== DuckDB (chuckjonas.duckdb) =====
+    // The DuckDB extension provides syntax highlighting and language
+    // support for .duckdb and .sql files. No additional config needed.
 
-    // ===== DuckDB =====
-    // Default extension for .duckdb files
-    "files.associations": {
-        "*.duckdb": "sql"
-    },
+    // ===== Excel / CSV Viewer (grapecity.gc-excelviewer) =====
+    // Right-click any .xlsx, .csv, or .tsv file and select "View" to
+    // open it in a spreadsheet grid. No additional config needed.
+
+    // ===== Parquet Explorer (AdamViola.parquet-explorer) =====
+    // Right-click any .parquet file and select "Open Preview" to
+    // browse its contents. No additional config needed.
 
     // ===== Editor =====
     "[sql]": {
         "editor.tabSize": 4,
         "editor.insertSpaces": true,
         "editor.formatOnSave": true,
-        "editor.rulers": [100],
-        "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+        "editor.rulers": [100]
     },
 
     "files.autoSave": "onFocusChange",
