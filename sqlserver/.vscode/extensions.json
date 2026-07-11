@@ -3,20 +3,8 @@
         // Official Microsoft SQL Server extension — connect, query, and manage
         "ms-mssql.mssql",
 
-        // SQLTools — multi-DB query runner with a rich UI (also supports SQL Server)
-        "mtxr.sqltools",
-
-        // SQLTools SQL Server / Azure driver
-        "mtxr.sqltools-driver-mssql",
-
-        // Schema visualization for MSSQL databases
-        "cweijan.vscode-database-client2",
-
-        // Colorizes .sql files with better syntax highlighting
-        "mtxr.sqltools",
-
-        // Highlight TODO/FIXME in comments
-        "wayou.vscode-todo-highlight",
+        // Official Microsoft SQL Server extension — enables users to develop and publish database schemas for MSSQL Databases
+        "ms-mssql.sql-database-projects-vscode",
 
         // just command runner — syntax highlighting and LSP for justfiles
         "nefrob.vscode-just",

@@ -22,16 +22,6 @@
     "mssql.results.streaming": true,
     "mssql.saveAsCsv.includeHeaders": true,
 
-    // ===== SQLTools =====
-    "sqltools.format": {
-        "capitalizeKeywords": true,
-        "keywordCase": "upper",
-        "linesBetweenQueries": 2,
-        "placeSelectColumnsOnNewLine": true
-    },
-    "sqltools.highlightQuery": true,
-    "sqltools.useNodeRuntime": true,
-
     // ===== Editor =====
     "[sql]": {
         "editor.tabSize": 4,
