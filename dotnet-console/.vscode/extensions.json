@@ -22,7 +22,10 @@
         "oderwat.indent-rainbow",
 
         // just command runner — syntax highlighting and LSP for justfiles
-        "nefrob.vscode-just"
+        "nefrob.vscode-just",
+
+        // Markdown editing — shortcuts, auto-preview, table of contents
+        "yzhang.markdown-all-in-one"
     ],
     "unwantedRecommendations": [
         // Web-specific extensions we don't need for console apps

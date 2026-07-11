@@ -25,7 +25,10 @@
         "fill-labs.dependi",
 
         // just command runner — syntax highlighting and LSP for justfiles
-        "nefrob.vscode-just"
+        "nefrob.vscode-just",
+
+        // Markdown editing — shortcuts, auto-preview, table of contents
+        "yzhang.markdown-all-in-one"
     ],
     "unwantedRecommendations": [
         "rust-lang.rust"  // The old Rust extension (pre-rust-analyzer)
