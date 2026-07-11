@@ -22,6 +22,9 @@
         "nefrob.vscode-just",
 
         // Markdown editing — shortcuts, auto-preview, table of contents
-        "yzhang.markdown-all-in-one"
+        "yzhang.markdown-all-in-one",
+
+        // Open files/folders in external applications from VS Code
+        "xdxd.vscode-open-external-app"
     ]
 }
