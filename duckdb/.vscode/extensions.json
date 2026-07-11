@@ -1,19 +1,13 @@
 {
     "recommendations": [
-        // SQLTools — multi-DB query runner (also supports DuckDB via driver)
-        "mtxr.sqltools",
+        // DuckDB SQL language support
+        "chuckjonas.duckdb",
 
-        // SQLTools DuckDB driver — connect to DuckDB databases
-        "mtxr.sqltools-driver-duckdb",
+        // Excel, CSV, and TSV file viewer
+        "grapecity.gc-excelviewer",
 
-        // DuckDB shell extension — run .duckdb queries inline
-        "quackdb.duckdb-vscode",
-
-        // Parquet file viewer and preview
-        "RandomFractalsInc.vscode-parquet-viewer",
-
-        // Inline SQL formatting for .sql and .duckdb files
-        "adpyke.vscode-sql-formatter",
+        // Parquet file viewer
+        "AdamViola.parquet-explorer",
 
         // just command runner — syntax highlighting and LSP for justfiles
         "nefrob.vscode-just",
