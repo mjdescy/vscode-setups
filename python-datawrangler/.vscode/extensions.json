@@ -44,6 +44,9 @@
         "tamasfe.even-better-toml",
 
         // Edit CSV files in a table grid
-        "janisdd.vscode-edit-csv"
+        "janisdd.vscode-edit-csv",
+
+        // just command runner — syntax highlighting and LSP for justfiles
+        "nefrob.vscode-just"
     ]
 }

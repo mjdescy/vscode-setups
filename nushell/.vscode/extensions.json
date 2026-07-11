@@ -1,6 +1,9 @@
 {
     "recommendations": [
         // Official Nushell language support — syntax highlighting, LSP, and debugger
-        "the-nushell.nushell-vscode"
+        "the-nushell.nushell-vscode",
+
+        // just command runner — syntax highlighting and LSP for justfiles
+        "nefrob.vscode-just"
     ]
 }

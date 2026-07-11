@@ -22,7 +22,10 @@
         "2gua.rainbow-brackets",
 
         // Dependi — dependency vulnerability scanning
-        "fill-labs.dependi"
+        "fill-labs.dependi",
+
+        // just command runner — syntax highlighting and LSP for justfiles
+        "nefrob.vscode-just"
     ],
     "unwantedRecommendations": [
         "rust-lang.rust"  // The old Rust extension (pre-rust-analyzer)

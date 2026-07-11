@@ -19,7 +19,10 @@
         "editorconfig.editorconfig",
 
         // Rainbow-colored indent guides
-        "oderwat.indent-rainbow"
+        "oderwat.indent-rainbow",
+
+        // just command runner — syntax highlighting and LSP for justfiles
+        "nefrob.vscode-just"
     ],
     "unwantedRecommendations": [
         // Web-specific extensions we don't need for console apps

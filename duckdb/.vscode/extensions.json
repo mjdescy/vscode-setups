@@ -13,6 +13,9 @@
         "RandomFractalsInc.vscode-parquet-viewer",
 
         // Inline SQL formatting for .sql and .duckdb files
-        "adpyke.vscode-sql-formatter"
+        "adpyke.vscode-sql-formatter",
+
+        // just command runner — syntax highlighting and LSP for justfiles
+        "nefrob.vscode-just"
     ]
 }

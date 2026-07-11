@@ -16,6 +16,9 @@
         "mtxr.sqltools",
 
         // Highlight TODO/FIXME in comments
-        "wayou.vscode-todo-highlight"
+        "wayou.vscode-todo-highlight",
+
+        // just command runner — syntax highlighting and LSP for justfiles
+        "nefrob.vscode-just"
     ]
 }
