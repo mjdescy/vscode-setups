@@ -1,0 +1,151 @@
+{
+    "Import CSV": {
+        "prefix": ["csv-import", "readcsv"],
+        "scope": "sql",
+        "body": [
+            "CREATE OR REPLACE TABLE ${1:table_name} AS",
+            "SELECT *",
+            "  FROM read_csv('${2:path/to/file.csv}');",
+            "$0"
+        ],
+        "description": "DuckDB: import CSV into a table"
+    },
+
+    "Import CSV (All Varchar)": {
+        "prefix": ["csv-import-varchar"],
+        "scope": "sql",
+        "body": [
+            "CREATE OR REPLACE TABLE ${1:table_name} AS",
+            "SELECT *",
+            "  FROM read_csv('${2:path/to/file.csv}',",
+            "    all_varchar = true",
+            "  );",
+            "$0"
+        ],
+        "description": "DuckDB: import CSV into a table with all columns as VARCHAR"
+    },
+
+    "Export to CSV": {
+        "prefix": ["csv-export", "writecsv"],
+        "scope": "sql",
+        "body": [
+            "COPY ${1:table_or_query} TO '${2:output/file.csv}'",
+            "  (FORMAT CSV, HEADER true, DELIMITER ',');",
+            "$0"
+        ],
+        "description": "DuckDB: export table/query to CSV"
+    },
+
+    "Import Parquet": {
+        "prefix": ["parquet-import", "readparquet"],
+        "scope": "sql",
+        "body": [
+            "CREATE OR REPLACE TABLE ${1:table_name} AS",
+            "SELECT *",
+            "  FROM read_parquet('${2:path/to/file.parquet}');",
+            "$0"
+        ],
+        "description": "DuckDB: import Parquet into a table"
+    },
+
+    "Export to Parquet": {
+        "prefix": ["parquet-export", "writeparquet"],
+        "scope": "sql",
+        "body": [
+            "COPY ${1:table_or_query} TO '${2:output/file.parquet}'",
+            "  (FORMAT PARQUET);",
+            "$0"
+        ],
+        "description": "DuckDB: export table/query to Parquet"
+    },
+
+    "Import TSV": {
+        "prefix": ["tsv-import", "readtsv"],
+        "scope": "sql",
+        "body": [
+            "CREATE OR REPLACE TABLE ${1:table_name} AS",
+            "SELECT *",
+            "  FROM read_csv('${2:path/to/file.tsv}',",
+            "    delim = '\\t'",
+            "  );",
+            "$0"
+        ],
+        "description": "DuckDB: import TSV (tab-delimited) into a table"
+    },
+
+    "Import TSV (All Varchar)": {
+        "prefix": ["tsv-import-varchar"],
+        "scope": "sql",
+        "body": [
+            "CREATE OR REPLACE TABLE ${1:table_name} AS",
+            "SELECT *",
+            "  FROM read_csv('${2:path/to/file.tsv}',",
+            "    all_varchar = true,",
+            "    delim       = '\\t'",
+            "  );",
+            "$0"
+        ],
+        "description": "DuckDB: import TSV into a table with all columns as VARCHAR"
+    },
+
+    "Export to TSV": {
+        "prefix": ["tsv-export", "writetsv"],
+        "scope": "sql",
+        "body": [
+            "COPY ${1:table_or_query} TO '${2:output/file.tsv}'",
+            "  (FORMAT CSV, HEADER true, DELIMITER '\\t');",
+            "$0"
+        ],
+        "description": "DuckDB: export table/query to TSV"
+    },
+
+    "Import XLSX": {
+        "prefix": ["xlsx-import", "readxlsx"],
+        "scope": "sql",
+        "body": [
+            "CREATE OR REPLACE TABLE ${1:table_name} AS",
+            "SELECT *",
+            "  FROM read_xlsx('${2:path/to/file.xlsx}');",
+            "$0"
+        ],
+        "description": "DuckDB: import XLSX into a table"
+    },
+
+    "Import XLSX (All Varchar)": {
+        "prefix": ["xlsx-import-varchar"],
+        "scope": "sql",
+        "body": [
+            "CREATE OR REPLACE TABLE ${1:table_name} AS",
+            "SELECT *",
+            "  FROM read_xlsx('${2:path/to/file.xlsx}',",
+            "    all_varchar = true",
+            "  );",
+            "$0"
+        ],
+        "description": "DuckDB: import XLSX with all columns as VARCHAR"
+    },
+
+    "Export to XLSX": {
+        "prefix": ["xlsx-export", "writexlsx"],
+        "scope": "sql",
+        "body": [
+            "COPY ${1:table_or_query} TO '${2:output/file.xlsx}'",
+            "  (FORMAT XLSX);",
+            "$0"
+        ],
+        "description": "DuckDB: export table/query to XLSX"
+    },
+
+    "Pull Reservoir Sample (exact rows + seed)": {
+        "prefix": ["reservoir-sample", "sample-reservoir"],
+        "scope": "sql",
+        "body": [
+            "SELECT *",
+            "FROM ${1:table_name}",
+            "USING SAMPLE reservoir(${2:100} ROWS)",
+            "REPEATABLE (${3:42});",
+            "$0"
+        ],
+        "description": "DuckDB: sample exact rows with reservoir sampling and a repeatable seed"
+    }
+}
