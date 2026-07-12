@@ -1,0 +1,29 @@
+# DuckDB
+*.duckdb
+*.duckdb.wal
+*.duckdb.tmp
+*.db
+*.sqlite
+*.sqlite3
+
+# Data files (generated)
+output/
+temp/
+data-out/
+
+# General
+*.log
+*.log.txt
+
+# Environment
+.env
+.envrc
+
+# OS files
+.DS_Store
+Thumbs.db
+*~
+*.swp
+
+# Workspace-specific — local private files
+.private/

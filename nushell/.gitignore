@@ -1,0 +1,17 @@
+# Nushell
+nu_history.txt
+nu_history
+
+# Generated files
+*.log
+*.bak
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
+*~
+*.swp
+
+# Workspace-specific — local private files
+.private/

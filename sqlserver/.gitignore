@@ -1,0 +1,31 @@
+# SQL Server database files
+*.mdf
+*.ldf
+*.ndf
+
+# Backup files
+*.bak
+*.trn
+*.log
+
+# SQL Database Projects (ms-mssql.sql-database-projects-vscode)
+*.dacpac
+*.bacpac
+*.publish.xml
+.sqlpackage/
+
+# Generated data exports (not input)
+output/
+
+# Environment
+.env
+.envrc
+
+# OS files
+.DS_Store
+Thumbs.db
+*~
+*.swp
+
+# Workspace-specific — local private files
+.private/
