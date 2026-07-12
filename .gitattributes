@@ -1,0 +1,52 @@
+# Auto-detect text files and normalize line endings
+* text=auto
+
+# C# / .NET
+*.cs     text diff=csharp
+*.csproj text
+*.slnx   text
+*.sln    text
+
+# Python
+*.py     text diff=python
+
+# Rust
+*.rs     text diff=rust
+*.toml   text
+
+# Nushell
+*.nu     text
+
+# SQL
+*.sql    text
+
+# Data
+*.csv    text
+*.tsv    text
+*.json   text
+*.yaml   text
+*.yml    text
+
+# Docs
+*.md     text
+*.txt    text
+
+# Config
+*.editorconfig text
+*.gitattributes text
+*.gitignore    text
+*.jsonc        text
+
+# Binary / generated — never diff
+*.ipynb   binary
+*.xlsx    binary
+*.parquet binary
+*.duckdb  binary
+*.mdf     binary
+*.ldf     binary
+*.dacpac  binary
+*.bacpac  binary
+*.png     binary
+*.jpg     binary
+*.ico     binary
+*.pdf     binary

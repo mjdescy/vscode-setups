@@ -11,9 +11,6 @@
         "editor.insertSpaces": true
     },
 
-    // Use .editorconfig for style rules (handled by EditorConfig extension)
-    "editorconfig.editorconfig": true,
-
     // ===== General Editor =====
     "files.exclude": {
         "**/bin/**": true,
