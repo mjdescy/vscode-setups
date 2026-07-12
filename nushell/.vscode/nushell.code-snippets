@@ -1,0 +1,26 @@
+{
+    "Get folders by glob": {
+        "prefix": "get-folders",
+        "scope": "nu",
+        "body": [
+            "def ${1:get-folders} [${2:pattern}: string] {",
+            "    glob $${2:pattern} | where type == dir | sort-by name",
+            "}",
+            "$0"
+        ],
+        "description": "Nushell: return a sorted list of folders matching a glob pattern"
+    },
+
+    "Main function": {
+        "prefix": "main-fn",
+        "scope": "nu",
+        "body": [
+            "def main [${1:--verbose}${2:rest}: string] {",
+            "    ${3:let folders = glob '**/*' | where type == dir | sort-by name}",
+            "",
+            "    $0",
+            "}"
+        ],
+        "description": "Nushell: main entry point function"
+    }
+}
